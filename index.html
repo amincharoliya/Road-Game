@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>
+RaodTrip
+</title>
+<script src="three.js"></script>
+<script src="1.11.2jquery.min.js"></script>
+<script src="script.js"></script>
+<style>
+body , body *{margin:0 auto;display:block;}
+#level,
+.lives,
+#score{position:fixed; top:10px;left:25px;font-family:Arial;font-size:16px;text-transform:uppercase;color:#333;z-index:1;}
+#level{right:25px;left:inherit;}
+.lives{right:50%;left:inherit;width: 55px;margin-right: -25px;}
+canvas{position:fixed;top:0;left:0;}
+#menu ul{position: absolute;top: 50%;left: 50%;margin-left: -80px;margin-top: -20px;text-align:center;padding: 0;}
+#menu ul li{font-style: normal;font-family: Arial;font-size: 38px;color: #fff;list-style:none;position:relative;overflow:hidden;cursor:pointer;}
+#menu ul li:before{display:block;content: '';position: absolute;bottom: 0;left: -100%;width: 100%;height: 2px;background: #ccc;transition:all 0.5s ease;-moz-transition:all 0.5s ease;-webkit-transition:all 0.5s ease;}
+#menu ul li:hover:before{left:0;}
+#menu{display: block;position: absolute;top: 0;left: 0;bottom: 0;right: 0;background-color: rgba(0,0,0,0.40);z-index: 9;}
+.highlight{position: absolute;top: 0;left: 0;bottom: 0;right: 0;background-color: rgba(255, 0, 0, 0.30);display:none;z-index:9;}
+.highlight.block{display:block;}
+</style>
+</head>
+<body>
+<span id="score"></span>
+<span id="level"></span>
+<span class="lives">Life: 3</span>
+<div id="menu">
+	<ul>
+		<li id="play">New Game</li>
+	</ul>
+</div>
+<div class="highlight"></div>
+</body>
+<html>
